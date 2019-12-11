@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card">
+    <form [formGroup]="user" (ngSubmit)="addUser()">
+        <ion-item lines="none">
+          <ion-label class="user-text">Name:</ion-label>
+          <ion-input type="text" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label class="user-text">Email:</ion-label>
+          <ion-input formControlName="email"></ion-input>
+        </ion-item>
+        <button ion-button type="submit" block [disabled]="!user.valid" class="button">Add User</button>
+      </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#users {
+    border-collapse: collapse;
+    table-layout: fixed; 
+    width: 100%;
+  }
+  #users tr {
+      height: 5px;
+  }
+  
+  #users td, #users th {
+    border: 1px solid #ddd;
+    padding: 4px;
+    font-size: 12px;
+  }
+  #users tr:hover {background-color: #ddd;}
+  
+  #users th {
+    text-align: center;
+    background-color: #5a5a5a;
+    color: white;
+    font-size: 12px;
+  }

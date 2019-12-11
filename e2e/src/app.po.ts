@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getPageTitle() {
-    return element(by.css('ion-title')).getText();
+    return element(by.css('ion-name')).getText();
   }
 }
